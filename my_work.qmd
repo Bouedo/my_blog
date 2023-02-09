@@ -1,0 +1,15 @@
+---
+title: "My work"
+about: 
+  template: jolla
+---
+
+Dans cette section, je vais présenter mes travaux et mes réalisations en tant qu'étudiant en économétrie. Je vais partager mes projets les plus importants et les plus intéressants, ainsi que mes réflexions sur les méthodes d'analyse économique. Cette section est un espace dédié à mes réalisations et à mon parcours académique, et je suis ravi de pouvoir les partager avec vous.
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+1.  **A survey of meat consumption among college students : The case of Nantes Université in 2022**
+
+[Lien pdf](https://pdf.ac/1emTYo)

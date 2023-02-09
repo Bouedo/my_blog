@@ -1,0 +1,18 @@
+project:
+  type: website
+
+website:
+  title: "Bouedo"
+  navbar:
+    right:
+      - about.qmd
+      - my_work.qmd
+      - icon: github
+        href: https://github.com/Bouedo/
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+editor: visual
+

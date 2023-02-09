@@ -1,0 +1,14 @@
+---
+title: "About"
+image: image1.JPG
+about:
+  template: jolla
+---
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+Bienvenue à la section "About" de mon blog! Je suis ravi de vous présenter un peu plus en détail qui je suis et ce qui me passionne.
+
+Je suis un étudiant en économétrie à l'IAE de Nantes, où je m'investis dans l'apprentissage des fondements de l'analyse économique et de la compréhension des marchés financiers. Mon intérêt pour ces sujets remonte à mon enfance, et je suis ravi de pouvoir en faire ma profession. Je suis passionné de crypto-monnaies et j'accorde une grande importance à la vie privée. Je crois que chacun devrait avoir le droit à une vie privée intacte et à la liberté de choisir comment il gère ses informations personnelles. C'est pourquoi je soutiens les projets qui cherchent à préserver la vie privée des utilisateurs sur internet. Notamment le la crypto-monnaie Monero dont je suis un membre actif de la communauté depuis 2017.

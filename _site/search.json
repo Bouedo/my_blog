@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "Le package Heron permet de calculer l’air d’un triangle a partir de la fonction qui porte le même nom.\nLa fonction heron est une fonction mathématique utilisée pour calculer l’aire d’un triangle . Cette fonction utilise une formule connue sous le nom de “formule d’Heron”. Cette formule est donnée par :\nA = √(s * (s - a) * (s - b) * (s - c))\noù A est l’aire du triangle, s est le demi-périmètre du triangle (s = (a + b + c) / 2), et a, b, et c sont les longueurs des côtés du triangle.\nLa formule d’Heron est une formule générale qui peut être utilisée pour trouver l’aire d’un triangle quelconque, même si les longueurs des côtés ne sont pas connues à l’avance. Cette formule est particulièrement utile lorsqu’il est nécessaire de trouver l’aire d’un triangle en utilisant seulement des points de coordonnées dans un plan.\nVoici le code de la fonction heron du package heron\n\nheron <- function(a, b, c) {\n  if (!is.numeric(a) || !is.numeric(b) || !is.numeric(c)) {\n    stop(\"Tous les arguments doivent être des nombres.\")\n  }\n  if (a <= 0 || b <= 0 || c <= 0) {\n    stop(\"Aucune des valeurs ne peut être négative ou nulle.\")\n  }\n  p <- demi_perimetre(a, b, c)\n  if (p <= 0) {\n    stop(\"Le demi périmètre doit être strictement positif.\")\n  }\n  sqrt(p * (p - a) * (p - b) * (p - c))\n}\n\nInstallation du package :\nLe package se trouve sur mon github, l’installation du package se fait a partir du package remotes.\nVoici le code permettant d’installer le package heron.\ninstall.packages(\"remotes\")\nremotes::install_github(\"Bouedo/heron\")"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Bienvenue à la section “About” de mon blog! Je suis ravi de vous présenter un peu plus en détail qui je suis et ce qui me passionne.\nJe suis un étudiant en économétrie à l’IAE de Nantes, où je m’investis dans l’apprentissage des fondements de l’analyse économique et de la compréhension des marchés financiers. Mon intérêt pour ces sujets remonte à mon enfance, et je suis ravi de pouvoir en faire ma profession. Je suis passionné de crypto-monnaies et j’accorde une grande importance à la vie privée. Je crois que chacun devrait avoir le droit à une vie privée intacte et à la liberté de choisir comment il gère ses informations personnelles. C’est pourquoi je soutiens les projets qui cherchent à préserver la vie privée des utilisateurs sur internet. Notamment le la crypto-monnaie Monero dont je suis un membre actif de la communauté depuis 2017."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Bienvenue sur mon blog! Je suis ravi de vous présenter un endroit où vous pouvez découvrir mes travaux en tant qu’étudiant en économétrie.\nCe blog est un espace dédié à mes réalisations et à mon parcours académique. Vous y trouverez mes idées sur les thèmes actuels de l’économie, ainsi que mes réflexions sur les méthodes d’analyse économique. J’y partagerai également mes projets les plus récents et les plus intéressants, ainsi que les défis auxquels j’ai été confronté et les solutions que j’ai trouvées."
+  },
+  {
+    "objectID": "my_work.html",
+    "href": "my_work.html",
+    "title": "My work",
+    "section": "",
+    "text": "Dans cette section, je vais présenter mes travaux et mes réalisations en tant qu’étudiant en économétrie. Je vais partager mes projets les plus importants et les plus intéressants, ainsi que mes réflexions sur les méthodes d’analyse économique. Cette section est un espace dédié à mes réalisations et à mon parcours académique, et je suis ravi de pouvoir les partager avec vous.\n\n\n\nA survey of meat consumption among college students : The case of Nantes Université in 2022\n\nLien pdf"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bouedo",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nFeb 7, 2023\n\n\n\n\n\n\n\n\nWelcome\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 5, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html#triangle-de-sierpiński",
+    "href": "posts/post-with-code/index.html#triangle-de-sierpiński",
+    "title": "Post With Code",
+    "section": "Triangle de Sierpiński",
+    "text": "Triangle de Sierpiński\nLe Triangle de Sierpiński est un fractal simple et célèbre. Il est généré en prenant un triangle équilatéral et en le divisant en quatre triangles plus petits semblables, puis en retirant le triangle central. Ce processus peut être répété de manière infinie pour produire une figure géométrique complexe à partir de formes simples.\n\nItération n°1\n\n\n\n\n\nPour la première itération l’air du triangle est de\n\n\n[1] 0.9742786\n\n\n\n\nIteration n°2\n\n\n\n\n\nPour la seconde itération l’air du triangle est de\n\n\n[1] 0.7307089\n\n\n\n\nIteration n°3\n\n\n\n\n\nPour la troisième itération l’air du triangle est de\n\n\n[1] 0.5480317\n\n\n\n\nIteration n°4\n\n\n\n\n\nPour la quatrième itération l’air du triangle est de\n\n\n[1] 0.4110238"
+  }
+]

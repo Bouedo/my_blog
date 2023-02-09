@@ -1,0 +1,109 @@
+---
+title: "Post With Code"
+date: "02/07/2023"
+categories: [news, code, analysis]
+---
+
+## Librairie Heron
+
+Le package Heron permet de calculer l'air d'un triangle a partir de la fonction qui porte le même nom.
+
+La fonction heron est une fonction mathématique utilisée pour calculer l'aire d'un triangle . Cette fonction utilise une formule connue sous le nom de "formule d'Heron". Cette formule est donnée par :
+
+A = √(s \* (s - a) \* (s - b) \* (s - c))
+
+où A est l'aire du triangle, s est le demi-périmètre du triangle (s = (a + b + c) / 2), et a, b, et c sont les longueurs des côtés du triangle.
+
+La formule d'Heron est une formule générale qui peut être utilisée pour trouver l'aire d'un triangle quelconque, même si les longueurs des côtés ne sont pas connues à l'avance. Cette formule est particulièrement utile lorsqu'il est nécessaire de trouver l'aire d'un triangle en utilisant seulement des points de coordonnées dans un plan.
+
+**Voici le code de la fonction heron du package heron**
+
+```{r}
+
+
+heron <- function(a, b, c) {
+  if (!is.numeric(a) || !is.numeric(b) || !is.numeric(c)) {
+    stop("Tous les arguments doivent être des nombres.")
+  }
+  if (a <= 0 || b <= 0 || c <= 0) {
+    stop("Aucune des valeurs ne peut être négative ou nulle.")
+  }
+  p <- demi_perimetre(a, b, c)
+  if (p <= 0) {
+    stop("Le demi périmètre doit être strictement positif.")
+  }
+  sqrt(p * (p - a) * (p - b) * (p - c))
+}
+```
+
+**Installation du package :**
+
+Le package se trouve sur mon github, l'installation du package se fait a partir du package remotes.\
+Voici le code permettant d'installer le package heron.
+
+    install.packages("remotes")
+    remotes::install_github("Bouedo/heron")
+
+------------------------------------------------------------------------
+
+## Triangle de Sierpiński
+
+Le Triangle de Sierpiński est un fractal simple et célèbre. Il est généré en prenant un triangle équilatéral et en le divisant en quatre triangles plus petits semblables, puis en retirant le triangle central. Ce processus peut être répété de manière infinie pour produire une figure géométrique complexe à partir de formes simples.
+
+### Itération n°1
+
+```{r}
+#| echo: false
+library(targets)
+tar_read(plot1)
+```
+
+Pour la première itération l'air du triangle est de
+
+```{r}
+#| echo: false
+tar_read(heron1)
+
+```
+
+### Iteration n°2
+
+```{r}
+#| echo: false
+tar_read(plot2)
+```
+
+Pour la seconde itération l'air du triangle est de
+
+```{r}
+#| echo: false
+tar_read(heron2)
+```
+
+### Iteration n°3
+
+```{r}
+#| echo: false
+tar_read(plot3)
+```
+
+Pour la troisième itération l'air du triangle est de
+
+```{r}
+#| echo: false
+tar_read(heron3)
+```
+
+### Iteration n°4
+
+```{r}
+#| echo: false
+tar_read(plot3)
+```
+
+Pour la quatrième itération l'air du triangle est de
+
+```{r}
+#| echo: false
+tar_read(heron4)
+```
